@@ -34,8 +34,8 @@ class RegistrationComplete extends Notification implements ShouldQueue
      */
     public function via($notifiable)
     {
-        //return ['mail', 'database', 'slack', SmsChannel::class]; //nexmo
-        return [SmsChannel::class];
+        return ['mail', 'database', 'slack', SmsChannel::class]; //nexmo
+        //return [SmsChannel::class];
     }
 
     /**
